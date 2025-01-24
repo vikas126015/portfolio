@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="static/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="glass-nav">
+        <div class="logo"></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+
+    <section id="home" class="glass-section">
+        <div class="hero-content">
+            <img src="{{url_for('static',filename='vikas.jpg')}}" alt="Profile Picture" class="profile-pic">
+            <h1>Hi, I'm vikas Devarakonda</h1>
+            <p class="title">Data Science Student</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/vikas-devarakonda-1295ba244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/vikas126015?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/vikasdevarakonda_?igsh=OWxwYXdtYTFoY2Jy"><i class="fab fa-instagram"></i></a>
+
+                <a href="https://github.com/vikas126015"><i class="fab fa-github"></i></a>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="glass-section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Who I Am</h3>
+                    <p>I am a passionate Data Analyst with a keen eye for transforming complex data into meaningful insights. My journey in data analytics began with a strong foundation in mathematics and computer science.</p>
+                    
+                    <h3>My Journey</h3>
+                    <p>Starting as a junior analyst, I've grown my expertise in data visualization and analysis through hands-on experience with various projects. I specialize in creating interactive dashboards and conducting in-depth data analysis using Python and Tableau.</p>
+                    
+                    <h3>What I Do</h3>
+                    <ul class="about-list">
+                        <li> Data Analysis and Interpretation</li>
+                        <li>📊 Dashboard Creation and Reporting</li>
+                        <li>📈 Business Intelligence Solutions</li>
+                        <li>🔮 Predictive Analytics</li>
+                    </ul>
+                </div>
+              
+    </section>
+
+    <section id="skills" class="glass-section">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM.png" alt="Python" class="skill-icon">
+                <h3>Python</h3>
+                <ul class="skill-list">
+                    <li>Pandas</li>
+                    <li>NumPy</li>
+                    <li>Matplotlib</li>
+                    <li>Seaborn</li>
+                </ul>
+            </div>
+            
+            <div class="skill-card">
+                <img src="https://www.tableau.com/sites/default/files/2022-04/TableauLogo_RGB.png" alt="Tableau" class="skill-icon">
+                <h3>Tableau</h3>
+                <ul class="skill-list">
+                    <li>Interactive Dashboards</li>
+                    <li>Data Storytelling</li>
+                    <li>Advanced Charts</li>
+                    <li>Real-time Analytics</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="HTML" class="skill-icon">
+                <h3>HTML</h3>
+                <ul class="skill-list">
+                    <li>HTML5</li>
+                    <li>Semantic Markup</li>
+                    <li>Web Accessibility</li>
+                    <li>Forms & Tables</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="SQL" class="skill-icon">
+                <h3>SQL</h3>
+                <ul class="skill-list">
+                    <li>Query Writing</li>
+                    <li>Data Manipulation</li>
+                    <li>Database Design</li>
+                    <li>Performance Tuning</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="glass-section">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="{{url_for('static',filename='story.jpg')}}" alt="Project 1">
+                <h3> PROMPT ENGINEERING</h3>
+                <p>Intern, PACKETPREP 
+                    •	Story Narrator AI Bot
+                     With the association of PacketPrep, our team developed a mini chatbot using prompt engineering and worked on it. 
+                    •	Integrated APIs and to enhance functionality of the project. 
+                    </p>
+              
+            </div>
+            <div class="project-card">
+                <img src="{{url_for('static',filename='Copy.jpg')}}" alt="Project 2">
+                <h3>Community Service Project (CSP) </h3>
+                <p>I undertook a community service project at Kurapati School. This initiative aimed to improve the overall educational experience for students and it helped me to enhance my presentation and communication skills. </p>
+               
+            </div>
+           
+        </div>
+    
+        <!-- Add this section where you want to display certificates -->
+<section id="certificates" class="glass-section">
+    <h2>Certificates & Achievements</h2>
+    <div class="certificates-container">
+        <div class="certificate-card">
+            <img src="{{url_for('static',filename='ic.jpg')}}" alt="prompt Certificate">
+            <div class="certificate-info">
+                <h3>Prompt Engineering</h3>
+                <p>Story Narrator AI Bot</p>
+                <span class="date">2024</span>
+            </div>
+        </div>
+
+        <div class="certificate-card">
+            <img src="{{url_for('static',filename='CSP.jpg')}}" alt="CSP" Certificate">
+            <div class="certificate-info">
+                <h3>Community Service Project</h3>
+                <p>Computer Skills Teaching</p>
+                <span class="date">2023</span>
+            </div>
+        </div>
+
+        <div class="certificate-card">
+            <img src="{{url_for('static',filename='Applying AI.png')}}" alt="Applying AICertificate">
+            <div class="certificate-info">
+                <h3>AI in Practice:Applying AI </h3>
+                <p>Edx Online</p>
+                <span class="date">2024</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="contact" class="glass-section">
+        <h2>Contact Me</h2>
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="glass-footer">
+        <p>&copy; 2024 vikasDevarakonda Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- For gradient background -->
+<section class="bg-gradient">
+
+    <!-- For glass effect cards -->
+    <div class="glass-card">
+    
+    <!-- For animated borders -->
+    <div class="border-animated">
+    
+    <!-- For modern buttons -->
+    <button class="btn-modern">
+    
+    <!-- For fade-in animations -->
+    <div class="fade-in">
+    
+    <!-- For skill bars -->
+    <div class="skill-bar">
+        <div class="skill-progress" data-progress="0.8"></div>
+        <div id="particles-js" class="bg-particles"></div>
+    </div>
+</body>
+</html>
