@@ -689,3 +689,35 @@ body {
 @keyframes spin {
     to { transform: rotate(360deg); }
 }
+
+
+
+/* Resume Button Styling */
+.btn-resume {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    border-radius: 8px;
+    text-decoration: none;
+    border: 2px solid #ff4b2b;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-resume:hover {
+    background: white;
+    color: #ff4b2b;
+}
+
+/* Borders for Sections */
+.glass-section {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+
