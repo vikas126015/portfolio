@@ -48,20 +48,21 @@
             <div class="about-grid">
                 <div class="about-text">
                     <h3>Who I Am</h3>
-                    <p>I am a passionate Data Analyst with a keen eye for transforming complex data into meaningful insights. My journey in data analytics began with a strong foundation in mathematics and computer science.</p>
-                    
+                    <p>I am a passionate Data Analyst with a keen eye for transforming complex data into meaningful insights.</p>
                     <h3>My Journey</h3>
-                    <p>Starting as a junior analyst, I've grown my expertise in data visualization and analysis through hands-on experience with various projects. I specialize in creating interactive dashboards and conducting in-depth data analysis using Python and Tableau.</p>
-                    
+                    <p>Starting as a junior analyst, I've grown my expertise in data visualization and analysis.</p>
                     <h3>What I Do</h3>
                     <ul class="about-list">
-                        <li> Data Analysis and Interpretation</li>
+                       
                         <li>📊 Dashboard Creation and Reporting</li>
                         <li>📈 Business Intelligence Solutions</li>
                         <li>🔮 Predictive Analytics</li>
                     </ul>
+                    <!-- Resume Download Button -->
+                    <a href="static/resume.pdf" download class="btn-resume">Download My Resume</a>
                 </div>
-              
+            </div>
+        </div>
     </section>
 
     <section id="skills" class="glass-section">
@@ -149,7 +150,7 @@
         </div>
 
         <div class="certificate-card">
-            <img src="{{url_for('static',filename='CSP.jpg')}}" alt="CSP" Certificate">
+            <img src="{{url_for('static',filename='CSP.jpg')}}" alt="CSP Certificate">
             <div class="certificate-info">
                 <h3>Community Service Project</h3>
                 <p>Computer Skills Teaching</p>
@@ -168,17 +169,19 @@
     </div>
 </section>
 
-    <section id="contact" class="glass-section">
-        <h2>Contact Me</h2>
-        <div class="contact-form">
-            <form>
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
-    </section>
+
+<section id="contact" class="glass-section">
+<h2>Contact Me</h2>
+<div class="contact-form">
+<form action="mailto:vikas126015@gmail.com" method="post" enctype="text/plain">
+<input type="text" name="Name" placeholder="Your Name" required>
+<input type="email" name="Email" placeholder="Your Email" required>
+<textarea name="Message" placeholder="Your Message" required></textarea>
+<button type="submit" class="btn">Send Message</button>
+</form>
+</div>
+</section>
+
 
     <footer class="glass-footer">
         <p>&copy; 2024 vikasDevarakonda Portfolio. All rights reserved.</p>
