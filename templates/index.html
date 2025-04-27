@@ -30,7 +30,7 @@
         <div class="hero-content">
             <img src="{{url_for('static',filename='vikas.jpg')}}" alt="Profile Picture" class="profile-pic">
             <h1>Hi, I'm vikas Devarakonda</h1>
-            <p class="title">Data Science Student</p>
+            <p class="title">Data Analyst</p>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/vikas-devarakonda-1295ba244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
                 <a href="https://www.facebook.com/vikas126015?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
@@ -59,7 +59,7 @@
                         <li>🔮 Predictive Analytics</li>
                     </ul>
                     <!-- Resume Download Button -->
-                    <a href="{{ url_for('static', filename='resume.pdf') }}" download class="btn-resume">Download My Resume</a>
+                    <a href="{{ url_for('static', filename='VikasDevarakondaResume.pdf') }}" download class="btn-resume">Download My Resume</a>
 
                 </div>
             </div>
@@ -75,8 +75,8 @@
                 <ul class="skill-list">
                     <li>Pandas</li>
                     <li>NumPy</li>
-                    <li>Matplotlib</li>
-                    <li>Seaborn</li>
+                  
+            
                 </ul>
             </div>
             
@@ -86,8 +86,7 @@
                 <ul class="skill-list">
                     <li>Interactive Dashboards</li>
                     <li>Data Storytelling</li>
-                    <li>Advanced Charts</li>
-                    <li>Real-time Analytics</li>
+                   
                 </ul>
             </div>
 
@@ -96,8 +95,7 @@
                 <h3>HTML</h3>
                 <ul class="skill-list">
                     <li>HTML5</li>
-                    <li>Semantic Markup</li>
-                    <li>Web Accessibility</li>
+                   
                     <li>Forms & Tables</li>
                 </ul>
             </div>
@@ -106,8 +104,7 @@
                 <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="SQL" class="skill-icon">
                 <h3>SQL</h3>
                 <ul class="skill-list">
-                    <li>Query Writing</li>
-                    <li>Data Manipulation</li>
+                  
                     <li>Database Design</li>
                     <li>Performance Tuning</li>
                 </ul>
@@ -172,20 +169,21 @@
 
 
 <section id="contact" class="glass-section">
-<h2>Contact Me</h2>
-<div class="contact-form">
-<form action="mailto:vikas126015@gmail.com" method="post" enctype="text/plain">
-<input type="text" name="Name" placeholder="Your Name" required>
-<input type="email" name="Email" placeholder="Your Email" required>
-<textarea name="Message" placeholder="Your Message" required></textarea>
-<button type="submit" class="btn">Send Message</button>
-</form>
-</div>
-</section>
+    <h2>Contact Me</h2>
+    <div class="contact-form">
+      <form action="https://formspree.io/f/xldbdagd" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+  
 
 
     <footer class="glass-footer">
-        <p>&copy; 2024 vikasDevarakonda Portfolio. All rights reserved.</p>
+        <p>&copy; 2024 VikasDevarakonda Portfolio. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
